@@ -35,8 +35,8 @@ void zlog_level_list_profile(zc_arraylist_t *levels, int flag)
 void zlog_level_list_del(zc_arraylist_t *levels)
 {
 	zc_assert(levels,);
-	zc_arraylist_del(levels);
 	zc_debug("zc_level_list_del[%p]", levels);
+	zc_arraylist_del(levels);
 	return;
 }
 
