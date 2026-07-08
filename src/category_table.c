@@ -32,8 +32,8 @@ void zlog_category_table_profile(zc_hashtable_t * categories, int flag)
 void zlog_category_table_del(zc_hashtable_t * categories)
 {
 	zc_assert(categories,);
-	zc_hashtable_del(categories);
 	zc_debug("zlog_category_table_del[%p]", categories);
+	zc_hashtable_del(categories);
 	return;
 }
 
