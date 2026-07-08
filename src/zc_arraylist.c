@@ -77,7 +77,7 @@ static int zc_arraylist_expand_inner(zc_arraylist_t * a_list, int max)
 int zc_arraylist_set(zc_arraylist_t * a_list, int idx, void *data)
 {
 	if (idx > a_list->size - 1) {
-		if (zc_arraylist_expand_inner(a_list, idx)) {
+		if (zc_arraylist_expand_inner(a_list, idx + 1)) {
 			zc_error("expand_internal fail");
 			return -1;
 		}
