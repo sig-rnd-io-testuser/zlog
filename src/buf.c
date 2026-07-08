@@ -609,7 +609,7 @@ int zlog_buf_adjust_append(zlog_buf_t * a_buf, const char *str, size_t str_len,
 				}
 				if (space_len) {
 					if (zero_pad) {
-						memset(a_buf->tail, '0', space_len);
+						memset(a_buf->tail, 0, space_len);
 					} else {
 						memset(a_buf->tail, ' ', space_len);
 					}
